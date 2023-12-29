@@ -30,6 +30,6 @@ Check the answer: converter.checkAnswer();
 
 Example:
 
-converter.setUserInput("2").setCorrectAnswer("2").checkAnswer(); // Output: Correct!
-converter.setUserInput("1,3").setCorrectAnswer("1.3").checkAnswer(); // Output: Correct!
-converter.setUserInput("abc").setCorrectAnswer("1.3").checkAnswer(); // Output: Incorrect.
+    converter.setUserInput("2").setCorrectAnswer("2").checkAnswer(); // Output: Correct!
+    converter.setUserInput("1,3").setCorrectAnswer("1.3").checkAnswer(); // Output: Correct!
+    converter.setUserInput("abc").setCorrectAnswer("1.3").checkAnswer(); // Output: Incorrect.

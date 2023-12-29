@@ -1,6 +1,6 @@
 export type AnswerCallback = (userInput: string, correctAnswer: string) => void;
 
-class ConverterOfNumber {
+class ConverterNumber {
   userInput: string = "";
   correctAnswerValue: string = "";
   correctAnswerFun: AnswerCallback = () => {};
@@ -46,4 +46,4 @@ class ConverterOfNumber {
   }
 }
 
-export const converterOfNumber: ConverterOfNumber = new ConverterOfNumber();
+export const ConverterOfNumber: ConverterNumber = new ConverterNumber();

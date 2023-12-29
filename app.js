@@ -1,30 +1,30 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.converterOfNumber = void 0;
-var ConverterOfNumber = /** @class */ (function () {
-    function ConverterOfNumber() {
+exports.ConverterOfNumber = void 0;
+var ConverterNumber = /** @class */ (function () {
+    function ConverterNumber() {
         this.userInput = "";
         this.correctAnswerValue = "";
         this.correctAnswerFun = function () { };
         this.incorrectAnswerFun = function () { };
     }
-    ConverterOfNumber.prototype.setUserInput = function (userInput) {
+    ConverterNumber.prototype.setUserInput = function (userInput) {
         this.userInput = userInput;
         return this;
     };
-    ConverterOfNumber.prototype.setCorrectAnswer = function (correctAnswer) {
+    ConverterNumber.prototype.setCorrectAnswer = function (correctAnswer) {
         this.correctAnswerValue = correctAnswer;
         return this;
     };
-    ConverterOfNumber.prototype.setAnswers = function (correctAnswerFun, incorrectAnswerFun) {
+    ConverterNumber.prototype.setAnswers = function (correctAnswerFun, incorrectAnswerFun) {
         this.correctAnswerFun = correctAnswerFun;
         this.incorrectAnswerFun = incorrectAnswerFun;
         return this;
     };
-    ConverterOfNumber.prototype.convertNumber = function (input) {
+    ConverterNumber.prototype.convertNumber = function (input) {
         return parseFloat(input.replace(",", "."));
     };
-    ConverterOfNumber.prototype.checkAnswer = function () {
+    ConverterNumber.prototype.checkAnswer = function () {
         var userNumber = this.convertNumber(this.userInput);
         if (!isNaN(userNumber)) {
             if (userNumber === this.convertNumber(this.correctAnswerValue)) {
@@ -39,6 +39,6 @@ var ConverterOfNumber = /** @class */ (function () {
         }
         return this;
     };
-    return ConverterOfNumber;
+    return ConverterNumber;
 }());
-exports.converterOfNumber = new ConverterOfNumber();
+exports.ConverterOfNumber = new ConverterNumber();

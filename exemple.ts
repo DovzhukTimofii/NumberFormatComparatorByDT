@@ -1,4 +1,6 @@
-import { converterOfNumber } from "./app";
+// exemple
+
+import { ConverterOfNumber } from "./app";
 import { AnswerCallback } from "./app";
 
 function goh(): void {
@@ -10,8 +12,7 @@ function goh(): void {
     console.log("Incorrect answer. Please try again.");
   };
 
-  converterOfNumber
-    .setAnswers(correctAnswer, incorrectAnswer)
+  ConverterOfNumber.setAnswers(correctAnswer, incorrectAnswer)
     .setUserInput("1,3")
     .setCorrectAnswer("1.1")
     .checkAnswer();

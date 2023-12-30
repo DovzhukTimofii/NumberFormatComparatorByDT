@@ -1,6 +1,6 @@
 {
   "name": "numberformatcomparator",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Designed to convert numbers from string format to numerical format, handling both decimal commas and dots.Validates user input against a correct answer.Executes user-defined functions for correct and incorrect answers.",
   "main": "app.js",
   "scripts": {
@@ -8,6 +8,8 @@
   },
   "author": "Dovzhuk Timofy",
   "license": "ISC",
+  "homepage": "https://dovzhuktimofii.github.io/portfolio/",
+  "repository": "https://github.com/DovzhukTimofii/NumberFormatComparatorByDT",
   "directories": {
     "lib": "lib"
   },

@@ -26,7 +26,17 @@ Set the user's input, correct answer, and answer handling functions:
        () => console.log("Correct!"),
        () => console.log("Incorrect.")
     );
-Check the answer: converter.checkAnswer();
+Check the answer:
+
+    converter.checkAnswer();
+installation of the library:
+
+    npm i numberformatcomparator
+import a library:
+
+    import { ConverterOfNumber } from "numberformatcomparator";
+    
+    import { AnswerCallback } from "./app"; // import type
 
 Example:
 
